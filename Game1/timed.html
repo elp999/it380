@@ -1,0 +1,45 @@
+<html>
+    <title>Timed race</title>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styleIndex.css">
+
+    </head>
+        <header>
+            <h1>Welcome to the Timed mode</h1>
+            <img src="ProfessorSpr.png" alt="Professor Image" class="professor-left">
+            <img src="ProfessorSpr.png" alt="Professor Image" class="professor-right">
+        </header>
+    
+        <body>
+            <style>
+                .container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .left-content,
+                .right-content {
+                    width: 40%;
+                }
+            </style>
+            <div class="container">
+                <div class="left-content">
+                    <h3>left side</h3>
+                </div>
+                <div class="middle-content">
+                    <h1 id="timer"></h1>
+            <button id="startButton">Start Timer</button>
+            <script src="timed.js"></script>
+
+            <div id="question"></div>
+            <div id="score"></div>
+            <input disabled type="number" id="answer" placeholder="Your answer">
+            <button onclick="checkAnswer()">Submit</button>
+            <script src="timedAddition.js"></script>
+                </div>
+                <div class="right-content">
+                    <h4>right</h4>
+                </div>
+        </body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    /* make it so all the content fits on the screen */
+    max-height: fit-content;
+}
+
+header {
+    background-color: turquoise;
+    padding: 20px 10px; /* Adjusted padding */
+    text-align: center;
+    border-style: solid;
+    border-color: purple;
+}
+
+#title {
+    color: purple;
+    font-size: 24px; /* Smaller font size for mobile */
+    font-weight: bold;
+    text-align: center;
+    margin: 0; /* Remove default margins */
+}
+
+div, #question {
+    color: purple;
+    padding: 10px; /* Reduced padding */
+    text-align: center;
+    font-size: 18px; /* Adjusted font size for mobile */
+    margin-bottom: 20px; /* Space out elements */
+}
+
+button {
+    background-color: purple;
+    color: white;
+    padding: 12px 24px; /* Adjusted padding for easier touch */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px; /* Larger font size for easier touch */
+    margin: 10px 2px; /* Adjust spacing */
+    cursor: pointer;
+    border-radius: 12px;
+    border: none; /* Remove border */
+}
+
+/* Responsive adjustments */
+@media (min-width: 600px) {
+    #title {
+        font-size: 50px; /* Larger font size for larger screens */
+    }
+
+    div, #question {
+        font-size: 20px; /* Adjust font size back for larger screens */
+    }
+
+    button {
+        padding: 15px 32px;
+        font-size: 16px; /* Adjust font size back for larger screens */
+    }
+}
+
+/* Ensure inputs are easy to interact with on mobile */
+input[type="text"], input[type="number"] {
+    font-size: 18px; /* Make the text larger and easier to see */
+    padding: 10px; /* Increase padding for easier interaction */
+    width: 80%; /* Use a percentage of the screen width */
+    margin: 10px 0; /* Add some margin around the input */
+    border: 1px solid #ccc; /* Optional: style as needed */
+    border-radius: 4px; /* Optional: style as needed */
+}
+
+img {
+    max-width: 70%;
+    height: 600px;
+    margin: 10px 0;
+}
